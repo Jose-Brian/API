@@ -1,23 +1,19 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Geolocalización API</title>
-    <script defer src="js/index.js"></script>
+    <title>Geolocalización con Google Maps</title>
     <link rel="stylesheet" href="css/index.css">
-    
-
-
-    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 </head>
-
 <body>
-    <h1>Ejemplo de Geolocalización API</h1>
-    <button id="getLocation"> <span>Obtener Ubicación</span> </button>
+    <h1>Ejemplo de Geolocalización API con Google Maps</h1>
+    <button id="getLocation">Obtener Ubicación</button>
     <p id="status">Presiona el botón para obtener tu ubicación.</p>
     <div id="map"></div>
-</body>
 
+    <!-- Cargar el script de Google Maps DESPUÉS de definir initMap -->
+    <script src="js/index.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCy6H-ggjUv-L8SnjYVLDT-2ILDN2CyeVc&callback=initMap"></script>
+</body>
 </html>
